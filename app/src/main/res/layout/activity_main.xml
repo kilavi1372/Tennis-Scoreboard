@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:baselineAligned="false"
     android:orientation="horizontal"
     android:layout_height="match_parent"
+    android:weightSum="2"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -14,11 +15,12 @@
         android:layout_weight="1">
 
         <ImageView
+            android:id="@+id/iv_usaw_logo"
             android:layout_width="match_parent"
             android:layout_height="183dp"
             android:layout_marginTop="20dp"
-            android:contentDescription="USA Women's Image"
-            android:src="@drawable/ic_drive" />
+            android:contentDescription="@string/desc_usaw_logo"
+            android:src="@drawable/logo_home_usaw" />
 
         <TextView
             android:id="@+id/tv_usaw_count"
@@ -29,17 +31,97 @@
             android:textSize="60sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="0"
+            android:text="@string/score_love_initial"
+            />
+
+        <TextView
+            android:id="@+id/tv_home_sets"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/score_sets_initial"
+            />
+
+        <TextView
+            android:id="@+id/tv_home_games"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/score_games_initial"
             />
 
         <Button
             android:id="@+id/btn_usaw_goal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Goal"
+            android:text="@string/score_point_button"
             android:layout_margin="8dp"
             android:onClick="onUsawClicked"
             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_visitor_logo"
+            android:layout_width="match_parent"
+            android:layout_height="183dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/desc_visitor_logo"
+            android:src="@drawable/logo_visitor" />
+
+        <TextView
+            android:id="@+id/tv_visitor_count"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:layout_marginTop="16dp"
+            android:textSize="60sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/score_love_initial"
+            />
+
+        <TextView
+            android:id="@+id/tv_visitor_sets"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/score_sets_initial"
+            />
+
+        <TextView
+            android:id="@+id/tv_visitor_games"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/score_games_initial"
+            />
+
+        <Button
+            android:id="@+id/btn_visitor_goal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/score_point_button"
+            android:layout_margin="8dp"
+            android:onClick="onVisitorClicked" />
 
     </LinearLayout>
 

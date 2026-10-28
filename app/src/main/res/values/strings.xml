@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">GameScore</string>
+    <string name="app_name">SingleScoreGame</string>
+
+    <string name="score_point_button">Point</string>
+    <string name="score_love_initial">Love</string>
+    <string name="score_sets_initial">Sets: 0</string>
+    <string name="score_games_initial">Games: 0</string>
+
+    <string name="desc_usaw_logo">USA Women\'s Image</string>
+    <string name="desc_visitor_logo">Visitor Team Image</string>
+    <string name="format_games">Games: %d</string>
+    <string name="format_sets">Sets: %d</string>
 </resources>
